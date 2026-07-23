@@ -2,6 +2,55 @@
 <html>
 <head>
     <title>Event Registration Form</title>
+    <style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f6f9;
+        margin: 0;
+        padding: 40px;
+    }
+
+    h2 {
+        text-align: center;
+        color: #333;
+    }
+
+    form {
+        width: 380px;
+        margin: auto;
+        background: white;
+        padding: 25px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.15);
+    }
+
+    input[type="text"],
+    select {
+        width: 100%;
+        padding: 8px;
+        margin-top: 5px;
+        box-sizing: border-box;
+    }
+
+    input[type="radio"] {
+        margin-left: 10px;
+    }
+
+    input[type="submit"] {
+        width: 100%;
+        background-color: #007BFF;
+        color: white;
+        border: none;
+        padding: 10px;
+        font-size: 16px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+        background-color: #0056b3;
+    }
+</style>
 </head>
 <body>
 
@@ -44,12 +93,42 @@
 <html>
 <head>
     <title>Registration Successful</title>
+    <style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f6f9;
+        text-align: center;
+        padding-top: 100px;
+    }
+
+    .box {
+        width: 420px;
+        margin: auto;
+        background: white;
+        padding: 30px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.15);
+    }
+
+    h2 {
+        color: green;
+    }
+
+    p {
+        font-size: 20px;
+    }
+
+    b {
+        color: #007BFF;
+    }
+</style>
 </head>
 <body>
 
-<h2>Registration Successful</h2>
-
-<p id="message"></p>
+<div class="box">
+    <h2>Registration Successful</h2>
+    <p id="message"></p>
+</div>
 
 <script>
 const params = new URLSearchParams(window.location.search);

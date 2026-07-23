@@ -2,13 +2,14 @@
 <html>
 <head>
     <title>Registration Successful</title>
+    <link rel="stylesheet" href="success.css">
 </head>
 <body>
 
-<h2>Registration Successful</h2>
-
-<p id="message"></p>
-
+<div class="container">
+    <h2>Registration Successful</h2>
+    <p id="message"></p>
+</div>
 <script>
 const params = new URLSearchParams(window.location.search);
 const name = params.get("username");

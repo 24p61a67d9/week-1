@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Successful</title>
+</head>
+<body>
+
+<h2>Registration Successful</h2>
+
+<p id="message"></p>
+
+<script>
+const params = new URLSearchParams(window.location.search);
+const name = params.get("username");
+
+document.getElementById("message").innerHTML =
+    "Successfully Registered, <b>" + name + "</b>!";
+</script>
+
+</body>
+</html>
